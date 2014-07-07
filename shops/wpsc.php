@@ -259,12 +259,12 @@ function loadCustomFields(&$plem_settings,&$custom_fileds){
 				  continue;  
 				  
 				$cfield->options = get_array_value($plem_settings,"wpsccf_at_editoptions".$n, "");
-				if(!$cfield->options)
-				  continue;
-
-				$cfield->options = json_decode($cfield->options);
-				if(!$cfield->options)
-					continue;
+				if($cfield->options){
+				  $cfield->options = json_decode($cfield->options);
+				}else{
+				  $cfield->options = new stdClass();	
+				  $cfield->options->formater = '';
+				}
 					
 				if($cfield->type == 'term'){
 				   $cfield->terms = array();
