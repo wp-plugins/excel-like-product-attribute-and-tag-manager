@@ -13,7 +13,7 @@ Excel-Like Attribute/Tag Managerr for WooCommerce and WP E-commerce - Light
 == Description ==
 
 Excel like product attribute and tag manager for WooCommerce / WP E-commerce 
-This free light version of component allowes: Fast management (edit) of attributes in wooCommerce and tags both in woocommerce and wp e-commerce; View of other product fields;
+This free light version of component allowes: Fast management (edit) of attributes (up to 3) in wooCommerce and tags both in woocommerce and wp e-commerce; View of other product fields;
 It supports both WooCommerce and WP E-commerce. UI behaves same as in MS Excel. It also has import/export feature for price.  This is right thin for you if you need to change existing or apply new attributes to large number of products.
 UI features: frozen columns, column reordering, sorting  
 EDITABLE / MASS-UPDATE / IMPORTANBLE FIELDS: WooCommerce: Attributes, Tags; WP E-commerce: Tags
