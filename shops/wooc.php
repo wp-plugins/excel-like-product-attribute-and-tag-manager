@@ -2326,7 +2326,9 @@ jQuery(document).ready(function(){
 	  
  <?php
 	if(fn_show_filed('attributes')){
+	    $n = 0;
 		foreach($attributes as $att){
+			$n++;
 			echo ',{';
 			echo '  data: "pattribute_'.$att->id.'" ';
 			echo ' ,editor: CustomSelectEditor.prototype.extend() ';
@@ -2335,6 +2337,8 @@ jQuery(document).ready(function(){
 			echo ' ,allow_random_input: true ';
 			echo ' ,dictionary: asoc_attribute_'.$att->id . ' ';
 			echo ' ,selectOptions: attribute_'.$att->id . ' ';
+			if($n >= 4)
+				echo ' ,readOnly: true';
 			echo '}';
 		}
 	}
